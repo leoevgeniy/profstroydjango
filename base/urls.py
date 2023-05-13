@@ -5,4 +5,5 @@ import base.views
 
 urlpatterns = [
     path('', base.views.index, name='index'),
+    path('sendmsg', base.views.sendmessage, name='sendmsg'),
 ]
