@@ -5,13 +5,12 @@
 //     myInput.focus()
 // })
 // import dotenv from "dotenv";
-import axios from 'axios'
 
 $('#callme').click(() => {
     const name = document.getElementById('name').value
     const phone = document.getElementById('number').value
     console.log(name, phone)
-    axios.post('http://localhost:8080/sendmsg', {name, phone})
+    fetch(`http://localhost:8080/sendmsg?name=${name}&phone=${phone}`).then()
     // const transporter = nodemailer.createTransport({
     //     host: "smtp.yandex.ru",
     //     port: 465,

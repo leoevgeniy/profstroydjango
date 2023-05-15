@@ -9,5 +9,6 @@ def index(request):
 # Create your views here.
 
 def sendmessage(request):
-    print(request)
-    pywhatkit.sendwhatmsg('+7XXXXXXXXXX', 'Привет мир!', 18, 40)
+    print('1231243',request)
+    pywhatkit.sendwhatmsg('+79673767234', 'Привет мир!')
+    return 'done'
