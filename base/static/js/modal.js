@@ -9,7 +9,6 @@
 $('#callme').click(() => {
     const name = document.getElementById('name').value
     const phone = document.getElementById('number').value
-    console.log(name, phone)
     fetch(`/sendmsg?name=${name}&phone=${phone}`).then()
     // const transporter = nodemailer.createTransport({
     //     host: "smtp.yandex.ru",

@@ -19,5 +19,4 @@ def sendmessage(request):
     email_from = settings.EMAIL_HOST_USER
     recipient_list = ['profstroy73@yandex.ru']
     send_mail(subject, message, email_from, recipient_list)
-    print(name, phone, 'done')
     return HttpResponse('sent email')
