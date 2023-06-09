@@ -48,7 +48,7 @@
         <p class="no-avans">Работаем <strong>БЕЗ ПРЕДОПЛАТЫ И АВАНСА</strong><br/>
             Выезд мастера на замер <strong>БЕСПЛАТНО</strong>
         </p>
-        <button id="callme" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="callme float-end">
+        <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="callme float-end">
             Отправить заявку
         </button>
     </div>
@@ -138,7 +138,7 @@
     <p class="pt-5 skidka" style="font-style: italic; color: white"> Оставьте заявку и
         получите скидку</p>
     <p class="mt-3 skidka" style="font-style: italic; color: white"> 10% на услуги</p>
-    <button id="callme" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="my-3 skidka-button callme">Отправить заявку</button>
+    <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="my-3 skidka-button callme">Отправить заявку</button>
 
 </div>
 <div class="otziv d-block container text-center">
@@ -196,11 +196,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
             </div>
             <div class="modal-body">
-                <input id="number" type="number" placeholder="+70000000000">
-                <input id="name" type="text" placeholder="name" >
+                <input id="number" type="tel" placeholder="+7хххххххххх">
+                <input id="name" type="text" placeholder="Как Вас зовут" >
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="callme" data-bs-dismiss="modal">Перезвонить мне</button>
+                <button type="button" id='callme' class="btn btn-primary" id="callme" data-bs-dismiss="modal">Перезвонить мне</button>
             </div>
         </div>
     </div>

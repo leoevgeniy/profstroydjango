@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-ogk$)%vlxf+m%6+v&stx6fg&7@s@d*(nqi4d0qbm0m2i4g5k&7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'leoevgrv.beget.tech']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -135,3 +135,13 @@ SASS_PROCESSOR_ROOT = STATIC_ROOT
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+EMAIL_HOST_USER = 'profstroy73@yandex.ru'
+EMAIL_HOST_PASSWORD = 'afkvjrctwusadfwj'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
